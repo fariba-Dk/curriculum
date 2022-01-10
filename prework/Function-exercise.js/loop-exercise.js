@@ -108,8 +108,13 @@ for (let fave = 0; fave <= 8; fave++){
 
 // Exercise 9. Make a variable that contains your favorite integer (this time make sure it's
 // less than 100). Write a loop (your choice which type) that prints the integers from 0 to 100.
+let mostFavorite = 8
 for (let favorite = 0; favorite <= 100; favorite++){
-  console.log("I'm counting from 0 -> my favorite number: ", favorite);
+  if (favorite === mostFavorite) {
+    console.log(mostFavorite, ' is my favorite number!!');
+  } else {
+    console.log(favorite, 'is not my favorite number.');
+  }
 }
 // Next to each number it should print "not my favorite number". But next to your favorite
 // number it should print "my favorite number!". Example output (if your favorite number was 2):
@@ -126,6 +131,8 @@ for (let favorite = 0; favorite <= 100; favorite++){
 // doing some research and write down your thoughts in a comment below:
 //
 
+console.log("According to w3school: 'for - loops through a block of code a number of times','for-in loops through the properties of an object','for-of - loops through the values of an iterable object','while - loops through a block of code while a specified condition is true','do-while - also loops through a block of code while a specified condition is true'");
+  
 // Exercise 11. Now we'll practice using nested loops (a loop inside another loop)!
 // Update the nested loops below to so that for each value of outsideCounter,
 // the inside loop will show a countdown
@@ -152,8 +159,9 @@ inside 1
 //   for (let insideCounter = outsideCounter /*???*/ /*???*/; ; ) {
 //     console.log("inside" /*???*/);
 //   }
-   console.log("***********************************");
-// }
+//    console.log("***********************************");
+//  }
+console.log('I am so confused by this for-loop, I need to revisit this in an hour or so, please 🧐.');
 
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
