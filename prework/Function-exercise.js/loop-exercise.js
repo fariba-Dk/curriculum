@@ -11,12 +11,29 @@
 
 // Exercise 1. Write a 'while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
+console.log('~~~ This is using while-loop method');
+let num = 0;
+while (num < 5) {
+  num++;
+  console.log('The number is now: ', num);
+}
 
 // Exercise 2. Write a 'do while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
+console.log('~~~ This is using do-while-loop method');
+let n = 1;
+do {
+  console.log("The number is " + n);
+  n++;
+}
+while (n <= 5);
 
 // Exercise 3. Write a 'for' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
+console.log('~~~ This is using for-loop method');
+for(let j = 1; j <= 5; j++){
+  console.log('Now serving: ', j);
+}
 
 // Exercise 4. Now we want a loop that prints the integers
 // counting DOWN from 10 to 1 (inclusive). Write three loops that do this, to practice
@@ -25,16 +42,59 @@
 // Exercise 5. Write a loop that prints the integers from 7 to 27. Write this
 // loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
 
-// Exercise 6. Write a loop that prints numbers between 0 and 100, counting by tens.
-// I.e. it will print 10, then 20, then 30, etc.
-// Write this loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
+console.log('~~~ This is usigg while-loop method');
+let f = 6;
+while (f < 27) {
+  f++;
+  console.log('The number is gow: ', f);
+}
+
+
+console.log('~~~ This is usigg do-while-loop method');
+let g = 7;
+do {
+  console.log("The number is " + g);
+  g++;
+}
+while (g <= 27);
+
+
+console.log('~~~ This is usigg for-loop method');
+for (let k = 7; k <= 27; k++){
+  console.log('now servigg: ', k);
+}
+
+// // Exercise 6. Write a loop that prints numbers between 0 and 100, counting by tens.
+// // I.e. it will print 10, then 20, then 30, etc.
+// // Write this loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
+
+console.log('~~~ This is usigg while-loop method');
+let h = 0;
+while (h < 100) {
+  h+=10;
+  console.log('The number is gow: ', h);
+}
+
+console.log('~~~ This is usigg do-while-loop method');
+let l = 10;
+do {
+  console.log("The number is " + l);
+  l+=10;
+}
+while (l <= 100);
+
+
+console.log('~~~ This is usigg for-loop method');
+for(let p = 10; p <= 100; p+=10){
+  console.log('now servigg: ', p);
+}
 
 // Exercise 7. Add a comment as to why the following loop is an infinite loop (will
 // run without ever stopping). Then fix the loop so that it stops when
 // counterFour is equal to -100.
 
-let counterFour = 1;
-while (counterFour < 2) {
+let counterFour = 100;
+while (counterFour > 0) {
   console.log("HELP ME!");
   counterFour--;
 }
@@ -42,8 +102,15 @@ while (counterFour < 2) {
 // Exercise 8. Make a variable that contains your favorite integer. Write a loop
 // (your choice which type) that prints the integers from 0 to that number.
 
+for (let fave = 0; fave <= 8; fave++){
+  console.log("I'm counting from 0 -> my favorite number: ", fave);
+}
+
 // Exercise 9. Make a variable that contains your favorite integer (this time make sure it's
 // less than 100). Write a loop (your choice which type) that prints the integers from 0 to 100.
+for (let favorite = 0; favorite <= 100; favorite++){
+  console.log("I'm counting from 0 -> my favorite number: ", favorite);
+}
 // Next to each number it should print "not my favorite number". But next to your favorite
 // number it should print "my favorite number!". Example output (if your favorite number was 2):
 // 0 not my favorite number
@@ -80,13 +147,13 @@ inside 1
 ***********************************
 */
 
-for (let outsideCounter = 0; outsideCounter <= 3 /*???*/; ) {
-  console.log("counting down from", outsideCounter);
-  for (let insideCounter = outsideCounter /*???*/ /*???*/; ; ) {
-    console.log("inside" /*???*/);
-  }
-  console.log("***********************************");
-}
+// for (let outsideCounter = 0; outsideCounter <= 3 /*???*/; ) {
+//   console.log("counting down from", outsideCounter);
+//   for (let insideCounter = outsideCounter /*???*/ /*???*/; ; ) {
+//     console.log("inside" /*???*/);
+//   }
+   console.log("***********************************");
+// }
 
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
