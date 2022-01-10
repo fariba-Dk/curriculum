@@ -390,10 +390,17 @@ alert( key in user ); // true, property "age" exists
 // Write the code, one line for each action:
 
 // Create an empty object user.
+// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line no-redeclare
+const user = {};
 // Add the property name with the value John.
+user.name = 'John';
 // Add the property surname with the value Smith.
+user.surname = 'Smith';
 // Change the value of the name to Pete.
+user.name = 'Pete';
 // Remove the property name from the object.
+delete user.name;
 // solution
 // Check for emptiness
 // importance: 5
